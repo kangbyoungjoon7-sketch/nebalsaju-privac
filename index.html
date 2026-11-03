@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>개인정보처리방침 — 법운명리 법사 업로더</title>
+<style>
+  body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.7; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; color: #1a1a2e; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  .todo { background: #fff4cc; padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침</h1>
+<p>적용 앱: <strong>네발사주 업로더</strong> (Google OAuth 클라이언트, 프로젝트 ID <code>nebalsaju-upload</code>)</p>
+<p>시행일: <span class="todo">[시행일 기입]</span></p>
+
+<h2>1. 운영자</h2>
+<p>이 앱은 아래 운영자가 자신의 YouTube 채널에 영상을 업로드하기 위해 직접 운영하는 내부 도구입니다. 제3자에게 제공하는 서비스가 아닙니다.</p>
+<ul>
+  <li>운영자: <span class="todo">[운영자 성명 또는 상호]</span></li>
+  <li>연락처: <span class="todo">[이메일]</span></li>
+</ul>
+
+<h2>2. 앱이 접근하는 정보</h2>
+<p>사용자가 Google 계정으로 동의하면 앱은 다음 권한을 요청합니다.</p>
+<ul>
+  <li><code>youtube.upload</code>: 운영자 채널에 영상을 올립니다.</li>
+  <li><code>youtube.readonly</code>: 채널 이름, 구독자 수, 영상 수, 조회수 등 채널 정보를 읽습니다.</li>
+  <li><code>youtube.force-ssl</code>: 운영자가 올린 영상의 제목·설명·썸네일을 수정하고, 댓글을 달거나 답글을 답니다.</li>
+</ul>
+<p>앱은 위 권한으로 <strong>운영자 본인의 채널 데이터만</strong> 다룹니다. 다른 사람의 채널이나 개인 정보에는 접근하지 않습니다.</p>
+
+<h2>3. 저장하는 정보</h2>
+<ul>
+  <li>OAuth 토큰(접근 토큰·갱신 토큰): 운영자 PC의 <code>_secret\token.json</code> 파일에만 저장합니다. 외부 서버로 보내지 않습니다.</li>
+  <li>업로드 기록(영상 제목, 영상 ID, 업로드 시각): 운영자 PC의 게시 로그 파일에 저장합니다.</li>
+</ul>
+<p>앱은 Google 계정의 비밀번호를 받거나 저장하지 않습니다. 로그인과 동의는 Google 화면에서만 이루어집니다.</p>
+
+<h2>4. 제3자 제공 및 처리 위탁</h2>
+<p>앱이 수집한 정보는 Google의 YouTube Data API 호출에 필요한 범위에서만 사용합니다. 그 밖에 제3자에게 제공하거나 판매하지 않습니다.</p>
+
+<h2>5. 보관 기간과 삭제</h2>
+<ul>
+  <li>토큰 파일은 운영자가 인증을 해제하거나 파일을 삭제할 때까지 보관합니다.</li>
+  <li>Google 계정 설정(<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>)에서 언제든 앱의 접근을 취소할 수 있습니다. 취소하면 토큰은 더 이상 쓸 수 없습니다.</li>
+</ul>
+
+<h2>6. Google API 서비스 사용 고지</h2>
+<p>이 앱은 Google API 서비스를 사용합니다. 사용에 따라 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 함께 적용됩니다.</p>
+
+<h2>7. 방침 변경</h2>
+<p>방침이 바뀌면 이 페이지에서 알리고, 시행일을 새로 적습니다.</p>
+
+</body>
+</html>
